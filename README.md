@@ -19,7 +19,8 @@ tema: lag det på https://theme.designsystemet.no og erstatt `site/vendor/design
 
 Lokalt: `python3 -m http.server 8000 --directory site` og åpne http://localhost:8000.
 
-Publisering: Cloudflare Pages bygger fra `main` med utdatamappe `site` og ingen byggkommando.
+Publisering: en Cloudflare Worker med statiske filer bygger fra `main` og serverer `site/`
+(https://aqio.no). Hver push til `main` publiseres automatisk.
 Mappen kan også lastes opp til en hvilken som helst annen statisk vert.
 
 Reelle tall kommer fra kildene i notatet. Tenkte søknader, fjorder, etatsutkast og
