@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="nb" data-color-scheme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Havbruksforvaltning 2.0</title>
+<meta name="description" content="Hvordan norsk havbruksforvaltning fungerer i dag, hvordan et raskere og bedre system kan fungere, og hva som skal til for å komme dit.">
+<meta property="og:title" content="Havbruksforvaltning 2.0">
+<meta property="og:description" content="Loven regner i måneder. Sakene tar år. En interaktiv gjennomgang av dagens system og et bedre alternativ.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230062ba'/%3E%3Cpath d='M6 13c3.3-3 6.7-3 10 0s6.7 3 10 0M6 20c3.3-3 6.7-3 10 0s6.7 3 10 0' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..700;1,14..32,400&display=swap">
+<link rel="stylesheet" href="vendor/designsystemet/theme.css">
+<link rel="stylesheet" href="vendor/designsystemet/designsystemet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#start" aria-label="Havbruksforvaltning 2.0, til toppen">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="var(--ds-color-accent-base-default)"/><path d="M6 13c3.3-3 6.7-3 10 0s6.7 3 10 0M6 20c3.3-3 6.7-3 10 0s6.7 3 10 0" fill="none" stroke="var(--ds-color-accent-base-contrast-default)" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span>Havbruksforvaltning 2.0<small>Raskere og bedre saksbehandling</small></span>
+    </a>
+    <nav class="chapters" aria-label="Kapitler">
+      <a href="#problemet">Problemet</a>
+      <a href="#sakene">Sakene</a>
+      <a href="#kostnaden">Kostnaden</a>
+      <a href="#system">Nytt system</a>
+      <a href="#veien">Veien dit</a>
+      <a href="#kilder">Kilder</a>
+    </nav>
+    <button class="ds-button theme-toggle" data-variant="tertiary" data-icon="true" data-size="sm" id="theme-toggle" type="button" aria-label="Bytt mellom lyst og mørkt tema">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+    </button>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="start" data-slide>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Havbruksforvaltning 2.0 · Oktober 2026</p>
+      <h1>Loven regner i måneder. <em>Sakene tar år.</em></h1>
+      <p class="lede">Norsk havbruksforvaltning bruker år på saker der loven forutsetter måneder, og mye av tiden går tapt uten at det gir bedre beslutninger. Her ser du hvordan systemet virker i dag, hvordan et bedre system kan virke, og hva som skal til for å komme dit.</p>
+      <div class="hero-actions">
+        <a class="ds-button" data-variant="primary" href="#problemet">Start gjennomgangen
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+        <span class="small">Bla med <span class="kbd">←</span> <span class="kbd">→</span> som i en presentasjon</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h2>Behandlingstid i dag og mål</h2>
+      <div class="table-scroll">
+        <table class="ds-table" data-size="sm">
+          <thead><tr><th>Spor</th><th>Sakstype</th><th>I dag</th><th>Mål</th></tr></thead>
+          <tbody>
+            <tr><td class="spor">A</td><td>Fornyelse eller endring uten økt belastning</td><td class="t-today">Måneder til år</td><td class="t-new">1–2 uker</td></tr>
+            <tr><td class="spor">B</td><td>Ny lokalitet eller utvidelse uten konsekvens&shy;utredning</td><td class="t-today">1–3 år</td><td class="t-new">6–8 uker</td></tr>
+            <tr><td class="spor">C</td><td>Sak med konsekvens&shy;utredning</td><td class="t-today">3–4 år</td><td class="t-new">4–6 måneder</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Kravene senkes ikke. Tiden brukes på vurderingene i stedet for på venting.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1 PROBLEMET ============ -->
+<section class="chapter" id="problemet" data-slide>
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="eyebrow"><b>Kapittel 1</b> · Problemet</p>
+      <h2>Fristene finnes. De holdes ikke.</h2>
+      <p class="lede">Tidsfristforskriften gir sektormyndighetene fire uker til å uttale seg, og en ordinær lokalitetssak skal ta i underkant av 30 uker. Forskriften slår samtidig fast at oversittede frister ikke påvirker gyldigheten og ikke gir rett til erstatning.</p>
+    </div>
+
+    <div class="panel" id="nokkeltall">
+      <div class="panel-head">
+        <h3>Frist mot faktisk tid</h3>
+        <span class="ds-tag" data-size="sm" data-color="info">Reelle tall · 2024</span>
+      </div>
+      <div class="dl-legend" aria-hidden="true">
+        <span><i class="f"></i>Frist</span>
+        <span><i style="background:var(--ink-3)"></i>Innenfor fristen</span>
+        <span><i style="background:var(--today)"></i>Over fristen</span>
+        <span><i style="background:repeating-linear-gradient(135deg,var(--today) 0 3px,transparent 3px 7px);border:1px solid var(--today)"></i>Spenn</span>
+      </div>
+      <div class="dl" id="deadline-chart"></div>
+      <details class="ds-details">
+        <summary>Vis som tabell</summary>
+        <div class="table-scroll">
+          <table class="ds-table" data-size="sm">
+            <thead><tr><th>Mål</th><th>Frist</th><th>Faktisk</th><th>Kilde</th></tr></thead>
+            <tbody>
+              <tr><td>Mattilsynets uttalelse, standard saksgang</td><td class="num">4 uker</td><td class="num">19 uker i snitt (2024)</td><td>KS, fylkeskommunenes rapportering</td></tr>
+              <tr><td>Mattilsynets uttalelse, spesielle omstendigheter</td><td class="num">4 uker</td><td class="num">41 uker i snitt (2024)</td><td>KS</td></tr>
+              <tr><td>Statsforvalternes uttalelse, standard saksgang</td><td class="num">4 uker</td><td class="num">29 uker i snitt (2024)</td><td>KS</td></tr>
+              <tr><td>Statsforvalternes uttalelse, spesielle omstendigheter</td><td class="num">4 uker</td><td class="num">57 uker i snitt (2024)</td><td>KS</td></tr>
+              <tr><td>Klagebehandling i Mattilsynet, Møre og Romsdal</td><td class="num">–</td><td class="num">Opptil 2 år</td><td>KS</td></tr>
+              <tr><td>Lokalitetssøknader i Nordland</td><td class="num">ca. 30 uker</td><td class="num">100–150 uker</td><td>SinkabergHansen, 2024</td></tr>
+              <tr><td>Konsekvensutredninger for store lokaliteter siden 2006</td><td class="num">–</td><td class="num">4 fullført, 3–4 år hver</td><td>Nofima</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+      <div class="panel-foot">
+        <span>Kilder: KS (27.06.2025), iLaks/SinkabergHansen (2024), Nofima.</span>
+        <span>Slik kunne nøkkeltallene vært publisert løpende, per etat og embete.</span>
+      </div>
+    </div>
+
+    <div class="facts">
+      <div class="fact">
+        <div class="big">§ 7</div>
+        <p>Tidsfristforskriften gjør oversittede frister rettslig kostnadsfrie. Det gjelder også klageinstanser, inkludert departementet.</p>
+      </div>
+      <div class="fact">
+        <div class="big">Juni 2025</div>
+        <p>De koordinerende myndighetene slår selv alarm: KS’ fylkesordfører- og rådslederkollegium skrev til tre departementer og ba om tiltak.</p>
+      </div>
+      <div class="fact">
+        <div class="big">Ingen eier helheten</div>
+        <p>Riksrevisjonen (Dokument 3:12, 2022–2023) og Havbruksutvalget (NOU 2023:23) beskriver flere sektormyndigheter med separate vedtak etter hver sin lov, uten felles styring.</p>
+      </div>
+    </div>
+
+    <div class="sub" id="sammenligning" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Samme sak, to systemer</p>
+        <h3>En ny lokalitet, behandlet i dag og i et nytt system</h3>
+        <p>I dag går søknaden til etatene etter tur, med snittidene fra 2024. I det nye systemet jobber alle samtidig i én sakmappe. Dra i tidslinjen eller trykk på «Spill av».</p>
+      </div>
+      <div class="panel" id="timeline">
+        <div class="tl-controls">
+          <button class="ds-button play" data-variant="primary" id="tl-play" type="button">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg>
+            <span>Spill av</span>
+          </button>
+          <div class="tl-scrub">
+            <label class="sr-only" for="tl-week">Uke</label>
+            <input type="range" id="tl-week" min="0" max="56" step="0.1" value="12">
+            <output class="tl-readout" id="tl-readout" for="tl-week">Uke 12</output>
+          </div>
+          <div class="ds-toggle-group" role="radiogroup" aria-label="Skala" data-size="sm">
+            <button type="button" class="ds-button" role="radio" data-variant="primary" data-zoom="56" aria-checked="true">Samme skala</button>
+            <button type="button" class="ds-button" role="radio" data-variant="tertiary" data-zoom="10" aria-checked="false">Zoom: 10 uker</button>
+          </div>
+        </div>
+        <div class="tl-panel" data-sys="today" id="tl-today">
+          <div class="tl-panel-head">
+            <h4>I dag</h4>
+            <span class="ds-tag" data-size="sm" data-color="info">Snitt 2024</span>
+            <span class="small">Rekkefølgen er forenklet og varierer mellom fylker.</span>
+          </div>
+          <div class="g-body"></div>
+          <div class="g-axis"><span></span><div class="ticks"></div></div>
+          <div class="ds-alert tl-status" data-color="warning" data-size="sm" aria-live="polite"><p class="txt"></p></div>
+        </div>
+        <div class="tl-panel" data-sys="new" id="tl-new">
+          <div class="tl-panel-head">
+            <h4>Nytt system · spor B</h4>
+            <span class="ds-tag" data-size="sm" data-color="accent">Målbilde</span>
+            <span class="small">Fire av de seks ukene er offentlig ettersyn, som er lovpålagt allerede i dag.</span>
+          </div>
+          <div class="g-body"></div>
+          <div class="g-axis"><span></span><div class="ticks"></div></div>
+          <div class="ds-alert tl-status" data-color="info" data-size="sm" aria-live="polite"><p class="txt"></p></div>
+        </div>
+        <details class="ds-details">
+          <summary>Slik går en sak i det nye systemet, steg for steg</summary>
+          <div class="table-scroll">
+            <table class="ds-table steps-table" data-size="sm">
+              <thead><tr><th>Når</th><th>Hva skjer</th><th>Hvem</th><th>Støtte fra systemet</th></tr></thead>
+              <tbody>
+                <tr><td>Før søknad</td><td>Søkeren ser handlingsrom i resipientregnskapet og kunnskapslaget, og planlegger forundersøkelser</td><td>Søker</td><td>Åpne kart og tall</td></tr>
+                <tr><td>Dag 0</td><td>Søknad sendes og valideres automatisk</td><td>Søker</td><td>Regler i kode, autoutfylling fra registre</td></tr>
+                <tr><td>Dag 1</td><td>Resipientsjekk og sporvalg; sakmappen åpnes for alle etater; høringsvarsel sendes</td><td>Fylkeskommunen</td><td>Automatisk kontroll mot regnskap og kunnskapslag</td></tr>
+                <tr><td>Dag 1–14</td><td>Etatene vurderer parallelt og melder begrunnede innvendinger innen 10 virkedager</td><td>Kommune og sektoretater</td><td>AI-utkast med kildehenvisning, nedtelling</td></tr>
+                <tr><td>Uke 1–4</td><td>Offentlig ettersyn; innspill kommer inn via app og web</td><td>Publikum</td><td>Gruppering av innspill med ordrette sitater</td></tr>
+                <tr><td>Uke 5</td><td>Motstrid mellom etater avklares; innspill besvares</td><td>Fylkeskommunen leder</td><td>Konfliktdeteksjon, utkast til svar</td></tr>
+                <tr><td>Uke 6</td><td>Vedtak, juridisk kontroll og signatur; publisering i eInnsyn og Akvakulturregisteret</td><td>Fylkeskommunen</td><td>Utkast med sporbar begrunnelse</td></tr>
+                <tr><td>Etter vedtak</td><td>Tre ukers klagefrist; ved klage får klageinstansen hele sakmappen med en gang</td><td>Klageinstans</td><td>Komplett digital saksmappe, frist for klagebehandling</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small" style="margin-top:.75rem">Etater som ikke melder innvendinger innen fristen, regnes å ikke ha innvendinger til konsultasjonen. Det gjelder ikke Statsforvalterens egen utslippstillatelse, som alltid krever et aktivt vedtak.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 SAKENE ============ -->
+<section class="chapter tint" id="sakene" data-slide>
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="eyebrow"><b>Kapittel 2</b> · Fem saker som viser mønsteret</p>
+      <h2>Tiden går med til organiseringen, ikke til vurderingene</h2>
+      <p class="lede">Sakene er valgt fordi tidsbruken skyldes måten forvaltningen er organisert på, ikke hensyn som i seg selv krevde mer tid. Velg en sak for å se forløpet og hva den ville blitt i et nytt system.</p>
+    </div>
+    <div class="cases">
+      <div>
+        <div class="case-list" id="case-list" role="group" aria-label="Velg sak"></div>
+        <div class="case-axis" aria-hidden="true"><span></span><div class="ticks" id="case-ticks"></div></div>
+        <p class="small" style="margin-top:.75rem;padding-inline:.7rem"><span class="today">■</span> Tid i dag &nbsp; <span class="new">■</span> Tid i nytt system, der dokumentet oppgir et mål.</p>
+      </div>
+      <article class="panel case-detail" id="case-detail" aria-live="polite"></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 KOSTNADEN ============ -->
+<section class="chapter" id="kostnaden" data-slide>
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="eyebrow"><b>Kapittel 3</b> · Hva det koster</p>
+      <h2>Ventetiden rammer de beste prosjektene hardest</h2>
+      <p class="lede">Lang og uforutsigbar saksbehandling er ikke nøytral. Den rammer drift, investeringer og miljø.</p>
+    </div>
+    <div class="costs">
+      <div class="cost"><h4>Fiskehelse og drift</h4><p>Oppdrettere i Nordland har måttet slakte ut fisk for tidlig og flytte fisk med brønnbåt fordi økt MTB ikke ble behandlet i tide, også i områder med påvist sykdom.</p></div>
+      <div class="cost"><h4>Investeringer</h4><p>Ny teknologi krever store investeringer før første fisk. Når svaret kan ta 2–8 år, øker kapitalkostnaden og risikoen, og det blir mer attraktivt å vente eller å bygge utenfor Norge.</p></div>
+      <div class="cost"><h4>Miljøgevinster som uteblir</h4><p>Når lukket teknologi møter tyngre prosess enn åpne merder, fortsetter de åpne merdene. Statsforvalteren påpekte selv i Watermoon-saken at et avslag betyr at det åpne anlegget fortsetter.</p></div>
+      <div class="cost"><h4>Ressurser i forvaltningen</h4><p>Etatene bruker tid på å etterlyse dokumentasjon, sette sammen data for hånd og svare på purringer, i stedet for på faglige vurderinger.</p></div>
+      <div class="cost"><h4>Tillit</h4><p>Når frister brytes systematisk uten konsekvens, svekkes tilliten til forvaltningen, både hos næringen og hos dem som vil verne fjordene.</p></div>
+    </div>
+
+    <div class="sub" id="arsaker" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Hvorfor det skjer, og hva som løser det</p>
+        <h3>Seks trekk ved systemet, seks prinsipper som svarer på dem</h3>
+        <p>Forsinkelsene skyldes ikke enkeltpersoner, men hvordan systemet er bygget. Hver årsak til venstre har et prinsipp til høyre.</p>
+      </div>
+      <div class="causes-head" aria-hidden="true">
+        <span></span><span class="eyebrow">Årsak i dag</span><span></span><span class="eyebrow">Prinsipp i nytt system</span>
+      </div>
+      <div class="causes" id="causes"></div>
+      <div class="ds-alert human-band" data-color="info"><p><strong>Det sjuende prinsippet gjelder alt: mennesker beslutter.</strong> AI forbereder, sammenstiller og foreslår. Skjønn og vedtak tas av navngitte saksbehandlere.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 NYTT SYSTEM ============ -->
+<section class="chapter tint" id="system" data-slide>
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="eyebrow"><b>Kapittel 4</b> · Det ideelle systemet</p>
+      <h2>Én inngang, én sakmappe, kunnskapen klar før saken kommer</h2>
+      <p class="lede">Byggesteinene finnes allerede: Altinn, Maskinporten, Akvakulturregisteret, BarentsWatch, Vannmiljø og havmodellene til HI og MET. Systemet har tre lag. Trykk på et lag for å se hvordan det virker.</p>
+    </div>
+
+    <div class="arch">
+      <div class="arch-main">
+        <div class="layer">
+          <div class="layer-top"><span class="kicker">Lag 1 · Inngang</span><a class="go" href="#soknad">Se søkerens side ↓</a></div>
+          <h4>Fellestjenester akvakultur</h4>
+          <p>Én søknad på Altinn 3, autoutfylt fra registrene. Preskriptive krav i akvakulturforskriften, akvakulturdriftsforskriften og NS 9415 sjekkes som regler i kode før innsending. Mønsteret er hentet fra Fellestjenester BYGG, som DiBK har drevet siden 2018.</p>
+          <div class="chips"><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Enhetsregisteret</span><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Akvakulturregisteret</span><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Kartverket</span><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Kystsoneplaner</span><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Maskinporten</span></div>
+        </div>
+        <div class="layer">
+          <div class="layer-top"><span class="kicker">Lag 2 · Saksbehandling</span><a class="go" href="#sakmappe">Se sakmappen ↓</a></div>
+          <h4>Felles sakmappe, alle samtidig</h4>
+          <p>Etatene arbeider i samme mappe med synlig nedtelling mot fristen. AI lager utkast til uttalelser med kildehenvisning og varsler om motstrid. Søkeren ser til enhver tid hvor saken står.</p>
+          <div class="etater"><span>Kommunen</span><span>Fiskeri&shy;direktoratet</span><span>Mattilsynet</span><span>Kystverket</span><span>Stats&shy;forvalteren</span></div>
+        </div>
+        <div class="layer">
+          <div class="layer-top"><span class="kicker">Lag 3 · Datalag</span><a class="go" href="#resipient">Se resipientregnskapet ↓</a></div>
+          <h4>Kunnskap på forhånd</h4>
+          <p>Holdes oppdatert uavhengig av enkeltsaker, slik at ingen sak må stanse mens kunnskap bygges.</p>
+          <div class="datalag">
+            <div><b>Resipientregnskap per vannforekomst</b><small>Nitrogen, fosfor, organisk stoff og sink: tilførsler, kapasitet og gjenværende handlingsrom. TEOTIL, Vannmiljø, HI og MET.</small></div>
+            <div><b>Kunnskapslag for natur og areal</b><small>Sårbare naturtyper, farleder, kulturminner og arealplaner. Undersøkelser fra tidligere saker gjenbrukes.</small></div>
+            <div><b>Driftsdata</b><small>Lus, sykdom og utslipp fra BarentsWatch og anleggenes rapportering, inkludert målt rensegrad for lukkede anlegg.</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="arch-side">
+        <div class="layer side">
+          <div class="layer-top"><span class="kicker">Høring</span><a class="go" href="#horing">Se appen ↓</a></div>
+          <h4>Digital deltakelse</h4>
+          <p>Varsel til naboer, fiskarlag, grunneiere og organisasjoner, med kart og konsekvenser. AI grupperer innspill med ordrette sitater. Saksbehandlerne leser og svarer.</p>
+        </div>
+        <div class="layer side">
+          <div class="layer-top"><span class="kicker">Åpenhet</span><a class="go" href="#nokkeltall">Se nøkkeltall ↑</a></div>
+          <h4>Nøkkeltall</h4>
+          <p>Saksbehandlingstid per etat og embete publiseres løpende, og saker kan fordeles mellom embeter når køen vokser.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Søkerens side -->
+    <div class="sub" id="soknad" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Visning · Søkerens side</p>
+        <h3>Én søknad, og alt det offentlige allerede vet, er fylt ut</h3>
+        <p>Kravene som kan sjekkes maskinelt, sjekkes før innsending. En søknad som er sendt inn, kan ikke erklæres ufullstendig på grunn av formalia. Prøv å endre MTB, teknologi eller vedlegg.</p>
+      </div>
+      <div class="app">
+        <div class="panel">
+          <div class="panel-head"><h3>Søknad om akvakulturtillatelse</h3><span class="ds-tag" data-size="sm" data-color="warning">Eksempel</span></div>
+          <form class="form" id="app-form" novalidate>
+            <fieldset>
+              <legend>Hentet automatisk</legend>
+              <div class="field-row">
+                <div class="ds-field"><label class="ds-label" for="f-org">Organisasjonsnummer</label><p class="auto" data-field="description">Hentet fra Enhetsregisteret</p><input class="ds-input" type="text" id="f-org" value="912 345 678" readonly></div>
+                <div class="ds-field"><label class="ds-label" for="f-name">Søker</label><p class="auto" data-field="description">Hentet fra Enhetsregisteret</p><input class="ds-input" type="text" id="f-name" value="Eksempel Havbruk AS" readonly></div>
+              </div>
+              <div class="field-row">
+                <div class="ds-field"><label class="ds-label" for="f-site">Lokalitet</label><p class="auto" data-field="description">Hentet fra Akvakulturregisteret</p><input class="ds-input" type="text" id="f-site" value="Nordneset, Midtfjorden" readonly></div>
+                <div class="ds-field"><label class="ds-label" for="f-pos">Posisjon</label><p class="auto" data-field="description">Hentet fra Kartverket</p><input class="ds-input" type="text" id="f-pos" value="60° 05,2′ N  6° 14,8′ Ø" readonly></div>
+              </div>
+              <div class="ds-field"><label class="ds-label" for="f-plan">Arealformål</label><p class="auto" data-field="description">Hentet fra Kystsoneplan</p><input class="ds-input" type="text" id="f-plan" value="Akvakultur (A) i vedtatt kystsoneplan" readonly></div>
+            </fieldset>
+            <fieldset>
+              <legend>Søkeren fyller ut</legend>
+              <div class="ds-field">
+                <label class="ds-label" for="f-type">Hva søker du om?</label>
+                <select class="ds-input" id="f-type">
+                  <option value="utvidelse">Utvidelse av MTB på eksisterende lokalitet</option>
+                  <option value="bytte">Bytte fra åpen merd til lukket anlegg, uten økt MTB</option>
+                </select>
+              </div>
+              <div class="field-row">
+                <div class="ds-field"><label class="ds-label" for="f-mtb">Økning i MTB (tonn)</label><input class="ds-input" type="number" id="f-mtb" min="0" max="6240" step="390" value="1560"></div>
+                <div class="ds-field"><label class="ds-label" for="f-tech">Teknologi</label>
+                  <select class="ds-input" id="f-tech"><option value="open">Åpen merd</option><option value="closed">Lukket anlegg</option></select>
+                </div>
+              </div>
+              <div>
+                <p class="ds-label" style="margin-bottom:.5rem">Vedlegg</p>
+                <div class="checks">
+                  <div class="ds-field"><input class="ds-input" type="checkbox" id="a-strom" checked><label class="ds-label" data-weight="regular" for="a-strom">Strømmåling (forundersøkelse)</label></div>
+                  <div class="ds-field"><input class="ds-input" type="checkbox" id="a-bunn"><label class="ds-label" data-weight="regular" for="a-bunn">Bunnundersøkelse etter NS 9410</label></div>
+                  <div class="ds-field"><input class="ds-input" type="checkbox" id="a-fort" checked><label class="ds-label" data-weight="regular" for="a-fort">Fortøyningsanalyse etter NS 9415</label></div>
+                  <div class="ds-field"><input class="ds-input" type="checkbox" id="a-rens"><label class="ds-label" data-weight="regular" for="a-rens">Dokumentert rensegrad for lukket anlegg</label></div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="panel">
+          <div class="rule-sum"><h3>Regler i kode</h3><span class="small" id="rule-count"></span></div>
+          <ul class="rules" id="rules"></ul>
+          <div class="submit-row">
+            <button class="ds-button" data-variant="primary" type="button" id="app-submit">Send søknad</button>
+          </div>
+          <div id="track-badge" class="track-badge"></div>
+          <div id="app-status" hidden>
+            <p class="status-label">Statuslinje: søkeren ser hvor saken ligger</p>
+            <ol class="stepper" id="stepper"></ol>
+            <div class="submit-row">
+              <button class="ds-button" data-variant="secondary" data-size="sm" type="button" id="step-next">Neste steg</button>
+              <button class="ds-button" data-variant="tertiary" data-size="sm" type="button" id="step-reset">Endre søknaden</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sakmappe -->
+    <div class="sub" id="sakmappe" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Visning · Saksbehandlerens sakmappe</p>
+        <h3>Fem etater i samme mappe, samtidig</h3>
+        <p>Hver etat ser nedtellingen mot fristen. AI lager utkast med kildehenvisning og varsler om motstrid, men utkastet sendes ikke før en saksbehandler har lest og signert det.</p>
+      </div>
+      <div class="panel">
+        <div class="folder-bar">
+          <div class="folder-meta"><span><b>Sak 2026/0412</b> · Nordneset, utvidelse 1 560 t MTB</span><span class="ds-tag" data-size="sm" data-color="accent">Spor B</span><span class="ds-tag" data-size="sm" data-color="warning">Eksempel</span></div>
+          <div class="ds-toggle-group" role="radiogroup" aria-label="Dag i saken" data-size="sm">
+            <button type="button" class="ds-button" role="radio" data-variant="primary" data-day="7" aria-checked="true">Virkedag 7</button>
+            <button type="button" class="ds-button" role="radio" data-variant="tertiary" data-day="11" aria-checked="false">Virkedag 11: frist passert</button>
+          </div>
+        </div>
+        <div class="ds-alert conflict" data-color="warning" id="conflict"><p><b>Motstrid oppdaget.</b> Kystverket foreslår å flytte nordre fortøyning 120 m sørover. Fiskeridirektoratet har registrert et gytefelt sør for lokaliteten. Fylkeskommunen avklarer i uke 5. <span class="small">Varselet er laget automatisk. Avklaringen gjøres av saksbehandler.</span></p></div>
+        <div class="cols" id="cols"></div>
+        <p class="small" id="folder-note" style="margin-top:1rem"></p>
+      </div>
+    </div>
+
+    <!-- Resipientregnskap -->
+    <div class="sub" id="resipient" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Visning · Resipientregnskapet</p>
+        <h3>Hva fjorden tåler, synlig før søknaden sendes</h3>
+        <p>Velg en vannforekomst og prøv et tiltak. Regnskapet viser straks om søknaden ligger innenfor handlingsrommet, og hvilke varianter som kan godkjennes. I Watermoon-saken gikk 2,5 år med til å vente på denne typen kunnskap.</p>
+      </div>
+      <div class="recip">
+        <div class="panel">
+          <div class="panel-head"><h3>Tenkt fjord</h3><span class="ds-tag" data-size="sm" data-color="warning">Eksempeldata</span></div>
+          <div class="map-wrap"><svg class="map" id="map" viewBox="0 0 640 380" role="group" aria-label="Kart over vannforekomster i en tenkt fjord"></svg></div>
+          <div class="legend" id="map-legend"></div>
+        </div>
+        <div class="panel ctrl" id="recip-ctrl">
+          <div class="wb-head"><h4 id="wb-name"></h4><span class="small" id="wb-type"></span></div>
+          <div class="ds-field">
+            <label class="ds-label" for="r-body">Vannforekomst</label>
+            <select class="ds-input" id="r-body"></select>
+          </div>
+          <div class="ds-field">
+            <label class="ds-label" for="r-act">Tiltak</label>
+            <select class="ds-input" id="r-act">
+              <option value="open">Økt MTB, åpen merd</option>
+              <option value="closed">Økt MTB, lukket anlegg</option>
+              <option value="swap">Bytt eksisterende åpen merd til lukket</option>
+              <option value="none">Ingen søknad, bare se regnskapet</option>
+            </select>
+          </div>
+          <div class="ds-field" id="r-mtb-f">
+            <label class="ds-label range-label" for="r-mtb">Økning i MTB <output id="r-mtb-o" for="r-mtb"></output></label>
+            <input type="range" id="r-mtb" min="0" max="6240" step="390" value="1560">
+          </div>
+          <div class="ds-field" id="r-rens-f">
+            <label class="ds-label range-label" for="r-rens">Målt rensegrad, lukket anlegg <output id="r-rens-o" for="r-rens"></output></label>
+            <input type="range" id="r-rens" min="0" max="90" step="5" value="60">
+          </div>
+          <div class="loads" id="loads"></div>
+          <div class="load-key" aria-hidden="true"><span><i style="background:var(--ink-3)"></i>Belastning i dag</span><span><i style="background:var(--today)"></i>Søknaden</span><span><i style="background:repeating-linear-gradient(135deg,var(--new) 0 2px,transparent 2px 5px);border:1px solid var(--new)"></i>Reduksjon</span><span><i class="cap"></i>Kapasitet</span></div>
+          <div class="ds-alert verdict" data-color="info" id="verdict"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Høring -->
+    <div class="sub" id="horing" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Visning · Høringsappen</p>
+        <h3>De berørte får varsel, kart og konsekvenser</h3>
+        <p>Naboer, fiskarlag, grunneiere og organisasjoner får varsel på telefonen. Innspillene grupperes av AI med ordrette sitater, og saksbehandlerne leser og svarer. Skriv et innspill selv og se hvor det havner.</p>
+      </div>
+      <div class="hearing">
+        <div class="phone" aria-label="Høringsapp, eksempel">
+          <div class="screen">
+            <div class="statusbar"><span>09:41</span><span>Høring</span></div>
+            <div class="notif">
+              <span class="ico"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 10c2-2 4-2 6 0s4 2 6 0M2 6c2-2 4-2 6 0s4 2 6 0"/></svg></span>
+              <div><b>Ny søknad nær deg</b>Utvidelse av lokaliteten Nordneset, 1,4 km fra eiendommen din.</div>
+            </div>
+            <div class="app-body">
+              <h5>Nordneset: søknad om økt MTB</h5>
+              <svg class="mini-map" viewBox="0 0 260 120" aria-label="Kart over lokaliteten og eiendommen din">
+                <path class="w" d="M0 40 C60 30 120 50 180 42 S250 30 260 36 V96 C200 90 150 104 90 96 S20 88 0 92 Z"/>
+                <rect class="pen old" x="120" y="54" width="44" height="22" rx="3"/>
+                <rect class="pen" x="120" y="54" width="62" height="22" rx="3"/>
+                <circle class="rng" cx="150" cy="65" r="42"/>
+                <rect class="home" x="60" y="104" width="8" height="7"/>
+                <path class="home" d="M58 105 64 99 70 105z"/>
+                <text x="74" y="112">Din eiendom</text>
+                <text x="124" y="50">Nordneset</text>
+              </svg>
+              <ul class="cons">
+                <li>Anlegget blir om lag 40 m lengre mot øst.</li>
+                <li>Lys fra fôrflåten er uendret.</li>
+                <li>Etter tiltaket er 88 % av fjordens handlingsrom for nitrogen brukt.</li>
+                <li>Høringsfrist om fire uker.</li>
+              </ul>
+              <label class="sr-only" for="h-text">Ditt innspill</label>
+              <textarea class="ds-input" rows="3" id="h-text" placeholder="Skriv innspillet ditt her, for eksempel om fiske, lys eller villaks"></textarea>
+              <button class="ds-button" data-variant="primary" data-size="sm" type="button" id="h-send">Send innspill</button>
+              <div class="ds-alert" data-color="success" data-size="sm" id="h-toast" hidden><p class="msg">Innspillet er registrert.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Innspill i saken</h3>
+            <span class="ds-tag" data-size="sm" data-color="warning">Eksempel</span>
+          </div>
+          <p class="small" id="h-summary" style="margin-bottom:1rem"></p>
+          <div class="groups" id="groups"></div>
+          <p class="small" style="margin-top:1rem">Grupperingen er et forslag fra AI. Saksbehandleren bekrefter gruppene, leser alle innspill og skriver svarene.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spor -->
+    <div class="sub" id="spor" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Proporsjonalitet</p>
+        <h3>Tre spor etter kompleksitet og miljøeffekt</h3>
+        <p>Enkle saker og saker som reduserer belastningen, får en rask vei. Kompliserte saker får den tiden de trenger, men med frister. Gulvet i hvert spor er satt av krav som ikke kan komprimeres.</p>
+      </div>
+      <div class="spor3">
+        <div class="spor-card">
+          <span class="letter">A</span>
+          <span class="time">1–2 uker</span>
+          <span class="today-was">I dag: måneder til år</span>
+          <p>Fornyelser og endringer uten økt samlet belastning, inkludert bytte fra åpen til lukket teknologi.</p>
+          <div class="floor"><span>Hva setter gulvet</span>Varsling til berørte og etatenes frist</div>
+        </div>
+        <div class="spor-card">
+          <span class="letter">B</span>
+          <span class="time">6–8 uker</span>
+          <span class="today-was">I dag: 1–3 år</span>
+          <p>Ny lokalitet eller utvidelse uten konsekvensutredning.</p>
+          <div class="floor"><span>Hva setter gulvet</span>Fire ukers offentlig ettersyn</div>
+        </div>
+        <div class="spor-card">
+          <span class="letter">C</span>
+          <span class="time">4–6 måneder</span>
+          <span class="today-was">I dag: 3–4 år</span>
+          <p>Saker som krever konsekvensutredning.</p>
+          <div class="floor"><span>Hva setter gulvet</span>To høringer på minst seks uker (KU-forskriften § 25) og søkers utredningstid</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI -->
+    <div class="sub" id="ai" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">AI og rettslige rammer</p>
+        <h3>AI forbereder. Mennesker beslutter.</h3>
+        <p>AI gjør saksbehandlingen raskere og mer konsistent, men skjønn og vedtak forblir menneskelig.</p>
+      </div>
+      <div class="table-scroll"><table class="ds-table ai-table"><thead><tr><th>Oppgave</th><th>Modenhet</th><th>Merknad</th></tr></thead><tbody id="ai-list"></tbody></table></div>
+      <div class="legal">
+        <div><b>Ny forvaltningslov (vedtatt 2025)</b>Har egne regler om automatiserte avgjørelser og saksbehandlingssystemer. Utredningsplikten står i § 44.</div>
+        <div><b>Vedtak om utslipp og lokalitet</b>Forutsetter skjønn og fattes av en navngitt saksbehandler, med AI som beslutningsstøtte.</div>
+        <div><b>EUs KI-forordning</b>Gjøres gjeldende gjennom EØS. Tillatelser til virksomheter er etter vår vurdering ikke opplistet som høyrisiko i vedlegg III, men krav til dokumentasjon, åpenhet og menneskelig kontroll bør legges til grunn.</div>
+        <div><b>Språkmodeller</b>Velges leverandørnøytralt og driftes innenfor EU/EØS. Kvaliteten avgjøres mer av kilder og kontroll enn av modellnavn.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 VEIEN DIT ============ -->
+<section class="chapter" id="veien" data-slide>
+  <div class="wrap">
+    <div class="chapter-head">
+      <p class="eyebrow"><b>Kapittel 5</b> · Realisme og veien dit</p>
+      <h2>3–5 år, og de to første stegene kan tas nå</h2>
+      <p class="lede">Målbildet er realistisk, men de største hindrene er juridiske og organisatoriske, ikke tekniske. De to raskeste stegene krever ingen lovendring og gir verdi med en gang.</p>
+    </div>
+    <div class="panel">
+      <div class="panel-head"><h3>Anslått tid per del</h3><span class="small">Heltrukket: nedre anslag · skravert: øvre anslag</span></div>
+      <div class="road" id="road"></div>
+    </div>
+
+    <div class="sub" id="lovendringer" data-slide>
+      <div class="sub-head">
+        <p class="eyebrow">Lovendringer som trengs</p>
+        <h3>Seks endringer gjør systemet mulig</h3>
+        <p>De to første kan gjøres uten ny lov. Hver endring er koblet til saken den ville løst.</p>
+      </div>
+      <ol class="laws">
+        <li><div><h4>Åpne tall og fordeling av saker</h4><p>Saksbehandlingstid per etat og embete publiseres løpende, og saker kan fordeles mellom embeter når køen vokser. Kan gjøres i instruks og tildelingsbrev.</p></div><div class="meta"><span class="ds-tag" data-size="sm" data-color="success">Uten ny lov</span><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Nordland</span></div></li>
+        <li><div><h4>Resipientregnskap som kunnskapsgrunnlag</h4><p>Vedtak etter forurensningsloven bygger på et offentlig, løpende oppdatert regnskap per vannforekomst, ikke på utredninger som startes sak for sak.</p></div><div class="meta"><span class="ds-tag" data-size="sm" data-color="success">Uten ny lov</span><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Watermoon</span></div></li>
+        <li><div><h4>Parallell behandling som hovedregel</h4><p>Etatene behandler søknaden samtidig, også mens dispensasjon eller planendring pågår, slik akvakulturloven § 15 allerede åpner for.</p></div><div class="meta"><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">§ 15</span></div></li>
+        <li><div><h4>Frister med konsekvens</h4><p>Tidsfristforskriften § 7 endres slik at oversittede frister for etatenes uttalelser regnes som ingen innvendinger, mens selve vedtaket krever aktivt skjønn. Klageinstanser, også departementet, får egne frister.</p></div><div class="meta"><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Norsk Sjømat</span><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Blár</span></div></li>
+        <li><div><h4>Rask vei for endringer som reduserer belastningen</h4><p>Bytte fra åpen til lukket teknologi og andre endringer uten økt samlet utslipp behandles i spor A, i tråd med Havbruksutvalgets anbefaling om utslippstillatelser.</p></div><div class="meta"><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Watermoon</span></div></li>
+        <li><div><h4>Lik prosess for renere teknologi og ytelsesbaserte tillatelser</h4><p>Lukkede anlegg får standardkrav i forskrift på linje med åpne merder, med en definert standard for måling og verifisering av rensegrad.</p></div><div class="meta"><span class="ds-tag" data-size="sm" data-variant="outline" data-color="neutral">Watermoon</span></div></li>
+      </ol>
+    </div>
+
+    <div class="sub">
+      <div class="sub-head">
+        <p class="eyebrow">Det som ikke kan komprimeres</p>
+        <h3>Noen frister er der av gode grunner</h3>
+      </div>
+      <div class="limits">
+        <div><b>Offentlig ettersyn</b><p>Fire uker i vanlige saker, minst seks uker per høring i KU-saker. EUs KU-direktiv krever selv minst 30 dager.</p></div>
+        <div><b>Forundersøkelser</b><p>Søkerens strømmålinger og bunnundersøkelser tar den tiden de tar.</p></div>
+        <div><b>Fjordenes kapasitet</b><p>Ingen plattform skaper resipientkapasitet. Den kan bare gjøre den synlig og fordele den bedre.</p></div>
+      </div>
+      <div class="two-col" style="margin-top:3rem">
+        <div class="read">
+          <p class="eyebrow">Risiko</p>
+          <p>Sektormyndighetenes vetorett beskytter ulike lovpålagte hensyn, og en løsning må beholde dem.</p>
+          <p>Kortere frister og AI-gruppering av innspill kan svekke legitimiteten lokalt hvis høringen oppleves som en formalitet. Åpenhet om hvordan systemet brukes er derfor en del av løsningen.</p>
+        </div>
+        <div>
+          <p class="callout new">Systemet gjør ikke alle svar positive. Det gir raske svar, og det gjør det lettere å finne varianter som kan godkjennes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" id="kilder">
+  <div class="wrap">
+    <h2>Kilder</h2>
+    <p class="small" style="margin-top:.5rem;max-width:44rem">Reelle tall er hentet fra kildene under. Tenkte søknader, fjorder, etatsutkast og høringsinnspill er merket <span class="ds-tag" data-size="sm" data-color="warning">Eksempel</span> og er laget for å vise hvordan systemet kan virke.</p>
+    <div class="src-groups">
+      <div>
+        <h3>Saksbehandlingstid og saker</h3>
+        <ul>
+          <li><a href="https://www.ks.no/contentassets/dffd65c0117d413b8e9a88b1717d4501/utfordringer-knyttet-til-lang-saksbehandlingstid-hos-sektormyndighetene-i-akvakultur.pdf">KS: Utfordringer knyttet til lang saksbehandlingstid hos sektormyndighetene i akvakultursaker (27.06.2025)</a></li>
+          <li><a href="https://ilaks.no/fortviler-over-seig-saksbehandling-i-nordland-vi-ma-na-slakte-ut-fisk-for-tidlig/">iLaks: Seig saksbehandling i Nordland til frustrasjon (03.05.2024)</a></li>
+          <li><a href="https://www.statsforvalteren.no/nordland/miljo-og-klima/akvakultur/">Statsforvalteren i Nordland: Akvakultur</a></li>
+          <li><a href="https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qnid=98726">Stortinget: Skriftlig spørsmål om Sivilombudets uttalelse i Blár-saken (Dokument 15:544, 2024–2025)</a></li>
+          <li><a href="https://ilaks.no/offshore-losning-til-havs-far-93-utviklingskonsesjoner/">iLaks: Offshore-løsning til havs får 9,3 utviklingskonsesjoner (02.12.2025)</a></li>
+          <li><a href="https://ilaks.no/stordal-ordforer-raser-over-treg-konsesjonsbehandling-dette-er-rett-og-slett-uakseptabelt/">iLaks: Stordal-ordfører raser over treg konsesjonsbehandling</a></li>
+          <li><a href="https://ilaks.no/soknader-om-lokaliteter-fylkeskommunene-ma-folge-loven-nar-lokaliteter-skal-godkjennes/">iLaks: Fylkeskommunene må følge loven når lokaliteter skal godkjennes (22.10.2021)</a></li>
+          <li><a href="https://www.statsforvalteren.no/contentassets/28fc07662bae4de79337c866fc3bb9dd/vedtak-om-avslag-pa-soknad-om-utviding-av-oppdrettsanlegg-for-eide-fjordbruk-as-pa-lokaliteten-brandaskuta-i-kvinnherad-kommune.pdf">Statsforvalteren i Vestland: Vedtak om avslag, Brandaskuta (26.03.2026)</a></li>
+          <li><a href="https://ilaks.no/eide-fikk-avslag-pa-soknader-om-fem-lokaliteter-for-det-lukkede-anlegget-watermoon/">iLaks: Eide fikk avslag på søknader om fem lokaliteter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Regelverk og systemet</h3>
+        <ul>
+          <li><a href="https://lovdata.no/dokument/SF/forskrift/2010-05-18-708">Lovdata: Tidsfristforskriften</a></li>
+          <li><a href="https://www.miljodirektoratet.no/ansvarsomrader/overvaking-arealplanlegging/arealplanlegging/konsekvensutredninger/utredningsprosessen/utredningsprosessen/1.4-behandle-plan-tiltak">Miljødirektoratet: Høring av konsekvensutredning (KU-forskriften § 25)</a></li>
+          <li><a href="https://www.regjeringen.no/contentassets/2268b51d73e34b44bb21cb2abe920c05/advokatforeningen.pdf">Advokatforeningen: Høringsuttalelse om automatisering i ny forvaltningslov</a></li>
+          <li><a href="https://www.riksrevisjonen.no/rapporter-mappe/no-2022-2023/myndighetenes-arbeid-med-fiskehelse-og-fiskevelferd-i-havbruksnaringen/">Riksrevisjonen: Dokument 3:12 (2022–2023)</a></li>
+          <li><a href="https://www.regjeringen.no/no/dokumenter/nou-2023-23/id2995224/">NOU 2023:23 Helhetlig forvaltning av akvakultur</a></li>
+          <li><a href="https://nofima.com/publication/902369/">Nofima: analyse av konsekvensutredninger for store lokaliteter</a></li>
+          <li><a href="https://www.dibk.no/verktoy-og-veivisere/andre-fagomrader/fellestjenester-bygg/dette-er-fellestjenester-bygg">DiBK: Fellestjenester BYGG</a></li>
+          <li><a href="https://ai.gov.uk/our-work/government/">GOV.UK: i.AI-verktøy i offentlig sektor</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>Havbruksforvaltning 2.0 · basert på notatet «Havbruksforvaltning 2.0: argumentet for en raskere og bedre prosess» (14.10.2026)</span>
+      <a href="#start">Til toppen ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# Arbeidsdokumentet holdes lokalt; bare nettsiden publiseres.
+*.md
+!README.md
+*:Zone.Identifier
+.DS_Store

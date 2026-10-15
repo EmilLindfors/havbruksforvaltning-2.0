@@ -1,0 +1,5 @@
+Designsystemet (Digitaliseringsdirektoratet)
+@digdir/designsystemet-css 1.23.0, MIT-lisens (se LICENSE)
+- designsystemet.css = dist/src/index.css
+- theme.css = dist/theme/designsystemet.css (standardtema)
+https://designsystemet.no
