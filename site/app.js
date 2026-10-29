@@ -121,7 +121,7 @@
       { etat: 'Statsforvalterne', kind: 'Uttalelse, spesielle omstendigheter', frist: 4, lo: 57, src: 'KS 2025, snitt for 2024' },
       { etat: 'Lokalitetssøknader, Nordland', kind: 'Hele saken', frist: 30, lo: 100, hi: 150, src: 'SinkabergHansen via iLaks, 2024', fristTxt: 'ca. 30 uker etter forskriften' },
       { etat: 'Mattilsynet, Møre og Romsdal', kind: 'Klagebehandling', lo: 104, upto: true, label: 'opptil 2 år', src: 'KS 2025' },
-      { etat: 'Store lokaliteter', kind: 'Konsekvensutredning, 4 fullført siden 2006', lo: 156, hi: 208, label: '3–4 år hver', src: 'Nofima' },
+      { etat: 'Store lokaliteter', kind: 'Konsekvensutredning, 4 saker 2006–2011', lo: 156, hi: 208, label: '3–4 år hver', src: 'Nofima, 2011' },
     ];
     const pct = (w) => (w / MAX) * 100;
     const chart = $('#deadline-chart');
@@ -335,20 +335,20 @@
       {
         id: 'watermoon', name: 'Watermoon', sub: 'Lukket anlegg, Hardangerfjorden',
         bar: { lo: 3.3, hold: [0.35, 2.92] }, todayTxt: '3,3 år, herav 2,5 år på vent',
-        newBar: [1 / 52, 2 / 52], newTxt: 'svar dag 1, spor A: 1–2 uker',
+        newBar: [0, 1 / 52], newTxt: 'svar dag 1 fra resipientregnskapet',
         title: 'Watermoon: svaret kom etter 3,3 år, men kunnskapen kunne ligget klar',
         story: [
-          'Eide Fjordbruk søkte om å utvide lokaliteten Brandaskuta i Hardangerfjorden med lukkede Watermoon-enheter. Kommunen anbefalte innvilgelse, og høringen ga ingen merknader.',
+          'Eide Fjordbruk søkte om å utvide lokaliteten Brandaskuta i Hardangerfjorden fra 2 340 til 5 940 tonn MTB, med fire lukkede Watermoon-enheter i tillegg til de åpne merdene. Kommunen anbefalte innvilgelse, og høringen ga ingen merknader.',
           'Avslaget kan være faglig riktig. Poenget er at 2,5 år gikk med til å vente på kunnskap som et løpende resipientregnskap ville hatt klar, og at regelverket ikke tilbyr noen rask vei for å bytte åpne merder med lukkede.',
         ],
         events: [
-          { d: 'Desember 2022', t: 'Søknad om utvidelse med lukkede Watermoon-enheter.' },
+          { d: 'Desember 2022', t: 'Søknad om utvidelse fra 2 340 til 5 940 tonn MTB, med lukkede Watermoon-enheter.' },
           { d: 'Våren 2023', t: 'Statsforvalteren setter alle søknader i fjorden på vent til HI har levert ny kunnskap om fjordens tåleevne.', bad: true },
           { d: 'November 2025', t: 'HI leverer kunnskapen.' },
-          { d: 'Mars 2026', t: 'Avslag fordi samlet utslipp ville øke. Lukkede anlegg krever individuell utslippstillatelse, mens åpne merder følger standardkrav i forskrift.', end: true },
+          { d: 'Mars 2026', t: 'Avslag fordi samlet utslipp ville øke. Lukkede anlegg krever individuell utslippstillatelse, mens åpne merder følger standardkrav i forskrift. Eide varsler klage.', end: true },
         ],
-        newSys: 'Svar på dag 1 fra resipientregnskapet. Bytte fra åpen til lukket teknologi går som rask vei i spor A.',
-        src: 'Statsforvalteren i Vestland, vedtak 26.03.2026; iLaks',
+        newSys: 'Svar på dag 1 fra resipientregnskapet om økningen får plass i fjorden. En variant som bytter åpne merder mot lukkede uten økt samlet utslipp, kunne gått som rask vei i spor A.',
+        src: 'Statsforvalteren i Vestland, vedtak 26.03.2026; iLaks 29.03.2026',
       },
       {
         id: 'blar', name: 'Blár', sub: 'Utviklingstillatelser, Octopus',
@@ -356,16 +356,17 @@
         newTxt: 'avklaring på måneder',
         title: 'Blár: om lag åtte år og kritikk fra Sivilombudet',
         story: [
-          'Roxel Aqua, i dag Blár, søkte om 14 utviklingstillatelser for havbrukskonseptet Octopus før ordningen stengte i november 2017.',
+          'Roxel Aqua, i dag Blár, søkte 16. november 2017 om 14 utviklingstillatelser for havbrukskonseptet Octopus, dagen før ordningen stengte.',
         ],
         events: [
-          { d: 'Før november 2017', t: 'Søknad om 14 utviklingstillatelser.' },
-          { d: 'Deretter', t: 'Nærings- og fiskeridepartementet opphever Fiskeridirektoratets avslag, men omgjør så sitt eget vedtak.', bad: true },
-          { d: '24. mai 2024', t: 'Sivilombudet konkluderer med at departementet ikke hadde grunnlag for omgjøringen. Departementet lar deretter flere svarfrister fra ombudet gå ut.', bad: true },
-          { d: '28. november 2025', t: 'Blár får 9,3 utviklingstillatelser.', end: true },
+          { d: 'November 2017', t: 'Søknad om 14 utviklingstillatelser.' },
+          { d: 'November 2018', t: 'Fiskeridirektoratet avslår.' },
+          { d: '2021–2022', t: 'Nærings- og fiskeridepartementet opphever avslaget i mars 2021, men omgjør sitt eget vedtak i november 2022.', bad: true },
+          { d: '31. mai 2024', t: 'Sivilombudet konkluderer med at departementet ikke hadde grunnlag for omgjøringen. Departementet lar deretter flere svarfrister fra ombudet gå ut.', bad: true },
+          { d: '28. november 2025', t: 'Etter at departementet har gjort om omgjøringen, får Blár 9,3 av 14 omsøkte utviklingstillatelser fra Fiskeridirektoratet.', end: true },
         ],
         newSys: 'Frist for klageinstansen og sporbar saksgang. Avklaring på måneder.',
-        src: 'Stortinget, Dokument 15:544 (2024–2025); iLaks 02.12.2025',
+        src: 'Sivilombudet, sak 2022/6056; Stortinget, Dokument 15:544 (2024–2025); iLaks 02.12.2025',
       },
       {
         id: 'sjomat', name: 'Norsk Sjømat', sub: 'Visningstillatelser, Stranda',
@@ -377,10 +378,12 @@
         ],
         events: [
           { d: 'Mai 2016', t: 'Søknad om to visningstillatelser.' },
-          { d: '2019', t: 'Saken er fortsatt uavklart. Fiskeriministeren kan ikke gi noen tidsramme, med henvisning til arbeidsbelastning i direktorat og departement.', bad: true },
+          { d: 'Januar 2019', t: 'Saken er fortsatt uavklart. Fiskeriministeren kan ikke gi noen tidsramme, med henvisning til arbeidsbelastning i direktorat og departement.', bad: true },
+          { d: 'Juni 2019', t: 'Betinget tilsagn om én visningstillatelse. Tilsagnet faller senere bort etter at Fylkesmannen går imot kommunens dispensasjon for lokalitetene.' },
+          { d: 'Februar 2021', t: 'Saken om nye lokaliteter er fortsatt uavklart i departementet.', bad: true },
         ],
         newSys: 'Søkeren ser hvor saken ligger. Fristene har konsekvens, og tid per etat publiseres.',
-        src: 'iLaks: Stordal-ordfører raser over treg konsesjonsbehandling',
+        src: 'iLaks 30.01.2019 og 19.06.2019; Stortinget, Dokument 15:1356 (2020–2021)',
       },
       {
         id: 'nordland', name: 'Nordland', sub: 'Lokalitetssøknader',
@@ -959,7 +962,7 @@
   /* ---------------- 4e. AI-modenhet ---------------- */
   (function ai() {
     const ROWS = [
-      ['Sjekke preskriptive krav som regler i kode', 'Moden', 4, 'Etter mønster fra Fellestjenester BYGG'],
+      ['Sjekke preskriptive krav som regler i kode', 'Moden', 4, 'Etter mønster fra DiBKs Fellestjenester plan og bygg'],
       ['Spredning, lus og eutrofiering', 'I drift', 4, 'HIs modeller brukes allerede i trafikklyssystemet og i fjordvurderinger'],
       ['Gruppere høringsinnspill', 'Bevist i stor skala', 4, 'Britiske i.AI Consult er et kjent eksempel'],
       ['Lese søknadsdokumenter og tegninger', 'Moden for tekst, delvis for tegninger', 3, 'Strukturert innsending gjør mye av dette unødvendig'],
@@ -975,7 +978,7 @@
     const ROWS = [
       ['Åpne tall for saksbehandlingstid', 'Fylkeskommunene rapporterer allerede', 0.75, 1, 'under 1 år', true],
       ['Resipientregnskap for prioriterte fjorder', 'Data og modeller finnes; jobben er å drifte dem', 1, 2, '1–2 år', true],
-      ['Fellestjenester akvakultur, første versjon', 'Erfaring: Fellestjenester BYGG', 2, 3, '2–3 år'],
+      ['Fellestjenester akvakultur, første versjon', 'Bygger på Akvakulturportalen og DiBKs erfaring', 2, 3, '2–3 år'],
       ['Lovendringer', 'Utredning og stortingsbehandling etter havbruksforliket i 2025', 2, 4, '2–4 år'],
       ['Full drift i alle fylker', 'Erfaring: nederlandske Omgevingswet, lang overgang', 4, 5, '4–5 år'],
     ];
